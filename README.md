@@ -112,10 +112,10 @@ Both outputs are driven high for some pulses number. There are could be up to 4 
 
 **For example:**
 
-`
-REG threshold -15 | PER threshold +2\
-Temperature Range: 17 degrees\
-Temperature step for adding more pulses: 4 degrees\
+```C
+REG threshold -15 | PER threshold +2
+Temperature Range: 17 degrees
+Temperature step for adding more pulses: 4 degrees
 0  t: 7    | state:  OFF, heating pulses: 0/5
 1  t: 6    | state:  OFF, heating pulses: 0/5
 2  t: 5    | state:  OFF, heating pulses: 0/5
@@ -148,7 +148,7 @@ Temperature step for adding more pulses: 4 degrees\
 29 t: -18  | state:  REG, heating pulses: 5/5
 30 t: -17  | state:  REG, heating pulses: 5/5
 ...
-`
+```
 
 A duration of each pulse is defined by `PULSE_LENGTH`:
 ```C
