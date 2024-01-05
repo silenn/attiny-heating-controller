@@ -113,9 +113,9 @@ Both outputs are driven high for some pulses number. There are could be up to 4 
 **For example:**
 
 `
-REG threshold -15 | PER threshold +2
-Temperature Range: 17 degrees
-Temperature step for adding more pulses: 4 degrees
+REG threshold -15 | PER threshold +2\
+Temperature Range: 17 degrees\
+Temperature step for adding more pulses: 4 degrees\
 0  t: 7    | state:  OFF, heating pulses: 0/5
 1  t: 6    | state:  OFF, heating pulses: 0/5
 2  t: 5    | state:  OFF, heating pulses: 0/5
