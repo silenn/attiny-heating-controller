@@ -169,6 +169,7 @@ A duration of each pulse is defined by `PULSE_LENGTH`:
 | H_ERR**            | Lights with one short turning off every second  |
 
 Sys Fault* - no power supply, MCU is not programmed, poor physical contact of conductors.
+
 H_ERR** - see the next chapter 'Error Catching'.
 
 
