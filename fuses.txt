@@ -1,0 +1,4 @@
+| Fuse Bits     | Attiny13A | Atmega8A |
+| ------------- | --------- | -------- |
+| High Byte     | `0xFF`    | `0xD1`   |
+| Low Byte      | `0x3A`    | `0xFF`   |
