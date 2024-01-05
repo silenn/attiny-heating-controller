@@ -38,6 +38,7 @@ Scroll down to a deep bottom for the last chapter 'Short Instruction'.
 
 ## Short Functionality Brief
 - Startup and reading 3 configuration bytes from an internal EEPROM: `THRESH_REG`, `THRESH_PER`, `RUNMODE`;
+
 loop:
 - A temperature measurement;
 - Comparing the temperature with 2 thresholds: `THRESH_REG`, `THRESH_PER`;
