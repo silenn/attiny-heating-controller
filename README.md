@@ -178,14 +178,16 @@ But it allows to correctly detect the absence of the sensor only if pull-up resi
 
 ### Compile
 Program compiled with AVR-Toolchain v3.4.2.1573, -Os -std=gnu99
-`----------------
+```C
+----------------
 Device: attiny13
 \
 Program:    1022 bytes (99.8% Full)
 (.text + .data + .bootloader)
 \
 Data:          2 bytes (3.1% Full)
-(.data + .bss + .noinit)`
+(.data + .bss + .noinit)
+```
 
 
 ## Short Instruction
