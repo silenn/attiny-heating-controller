@@ -1,4 +1,4 @@
-# ATTINY13-Nozzles-Heater
+# ATTINY13/ATMEGA8-Heating-Controller
 Temperature controller based on Attiny13A/Atmega8A and DS18B20 digital thermometer.
 
 
@@ -175,7 +175,7 @@ H_ERR** - see the next chapter 'Error Catching'.
 
 ## Error Catching
 Program detects a DS18B20 presence and checks all received data using CRC. If something wrong, system falls to H_ERR state and tries to repeat operating cycle after 1.25 sec.
-But it allows to correctly detect the absence of the sensor only if pull-up resistor is connected to a DQ-pin. For cases of missed pull-up, there is added a checking of 5th and 7th byte of a scratchpad - it's reserved 0xFF and 0x10 (DS18B20 datasheet, 19-7487; Rev 6; 7/19 - 'Figure 9. DS18B20 Memory Map'). If skipping of this check is needed, just uncomment the definition `SENS_SKIP_RESERVED_BYTES_CHECK`.
+But it allows to correctly detect the absence of the sensor only if a pull-up resistor is connected to a DQ-pin. For cases of the missed pull-up, there is added a checking of 5th and 7th bytes of a scratchpad - it's reserved 0xFF and 0x10 respectively (DS18B20 datasheet, 19-7487; Rev 6; 7/19 - 'Figure 9. DS18B20 Memory Map'). If skipping of this check is needed, just use (uncomment) the definition `SENS_SKIP_RESERVED_BYTES_CHECK`.
 
 
 ### Compile
@@ -199,7 +199,7 @@ Data:          2 bytes (3.1% Full)
 - Programm EEPROM with 'eeprom.bin';
 - Connect DS18B20's DQ pin to PB2;
 - Optional connect LED to PB1;
-- Now your Attiny13A will drive PB3 and PB4 high in the pulse mode if temperature is below -4 Celsius degrees and in the regular mode if temperature below -16;
+- Now your Attiny13A will drive PB3 and PB4 high in the pulse mode if temperature is below -4 Celsius degrees and in the regular mode if temperature below -16 degrees;
 - Enjoy.
 
 
